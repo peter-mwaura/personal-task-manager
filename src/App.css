@@ -1,0 +1,264 @@
+:root {
+    --main-border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    object-fit: contain;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+    /* outline: 2px solid yellow; */
+}
+
+.navbar .main-menu ul {
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li a {
+    padding: 8px 15px;
+    font-weight: 800;
+    margin: 0 5px;
+    border-radius: var(--main-border-radius);
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.navbar ul li a:hover {
+    opacity: 1;
+}
+
+.navbar ul li a .icon {
+    margin-right: 8px;
+}
+
+/* Hero */
+.hero {
+    /* border: 2px solid red; */
+    width: 600px;
+    margin: 0 auto;
+    height: 700px;
+}
+
+.hero-timer {
+    /* border: 2px solid green; */
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-timer-nav {
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.hero-timer-nav button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero-timer-btn {
+    border: none;
+    color: rgb(186, 73, 73);
+    background-color: white;
+    padding: 20px 40px;
+    width: 47%;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero-timer-countdown {
+    font-size: 120px;
+    font-weight: bold;
+    width: 70%;
+    text-align: center;
+}
+
+.hero-timer-buttons {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-task {
+    /* border: 2px solid blue; */
+    height: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.hero-task-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.hero-task-singletask {
+    width: 100%;
+    cursor: pointer;
+    background: white;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border-left: 8px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.hero-task-icons i {
+    margin-left: 10px;
+}
+
+.hero-task-inputtask {
+    width: 100%;
+    background: white;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.hero-task-inputheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    padding: 20px 0;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+    .navbar {
+        width: 100%;
+        padding: 10px;
+    }
+    .navbar .main-menu ul {
+        padding: 20px 2px 20px 10px;
+    }
+    .navbar ul li a {
+        margin: 0 10px;
+        padding: 10px 15px;
+    }
+    .navbar ul li a .icon {
+        margin-right: 0px;
+        font-size: 15px;
+    }
+    .hero {
+        width: 90%;
+        height: 500px;
+    }
+    .hero-timer-nav button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .hero-timer-countdown {
+        font-size: 80px;
+    }
+    .hero-timer-btn {
+        padding: 10px 20px;
+        width: 47%;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .hero-task-inputheading {
+        padding: 10px 0;
+    }
+}
