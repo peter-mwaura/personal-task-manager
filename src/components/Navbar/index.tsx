@@ -28,7 +28,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <Link to="/login" className="btn">
+                            <Link to="#" className="btn">
                                 <i className="fas fa-user icon"></i>Sign In
                             </Link>
                         </li>
@@ -48,7 +48,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <Link to="/login" className="">
+                            <Link to="#" className="">
                                 <i className="fas fa-user icon"></i>
                             </Link>
                         </li>
