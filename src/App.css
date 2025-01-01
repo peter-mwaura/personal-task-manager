@@ -106,7 +106,7 @@ img {
     background-color: white;
     padding: 20px 40px;
     width: 47%;
-    border-radius: 5px;
+    border-radius: var(--main-border-radius);
     font-size: 20px;
     font-weight: bold;
 }
@@ -171,6 +171,24 @@ img {
     padding: 10px 20px;
 }
 
+.hero-task-inputtask-input {
+    border-radius: 3px;
+    padding: 8px;
+    margin-bottom: 3px;
+}
+
+.hero-task-inputtask-error {
+    color: red;
+    font-size: 14px;
+}
+
+.hero-task-inputtask-button {
+    padding: 5px;
+    border-radius: var(--main-border-radius);
+    font-weight: bold;
+    color: rgb(186, 73, 73);
+}
+
 .hero-task-inputheading {
     display: flex;
     align-items: center;
@@ -183,40 +201,9 @@ img {
     cursor: pointer;
 }
 
-/* Text Classes */
-.text-xxl {
-    font-size: 3rem;
-    line-height: 1.2;
-    font-weight: 600;
-}
-
-.text-xl {
-    font-size: 2.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-}
-
-.text-lg {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    font-weight: normal;
-}
-
-.text-md {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-}
-
-.text-sm {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    font-weight: normal;
-}
-
 /* MEDIA QUERIES */
 
-/* MOBILE VERSION */
+/* SMALL SCREEN DEVICES (MOBILES) */
 @media only screen and (max-width: 600px) {
     body {
         font-size: 12px;
@@ -255,10 +242,23 @@ img {
     .hero-task-inputheading {
         padding: 10px 0;
     }
+
+    .hero-task-inputtask-input {
+        padding: 4px;
+        margin-bottom: 2px;
+    }
+
+    .hero-task-inputtask-error {
+        font-size: 11px;
+    }
+
+    .hero-task-inputtask-button {
+        padding: 1px;
+    }
 }
 
-/* TABLET VERSION */
-@media only screen and (min-width: 601px) {
+/* MEDIUM SCREEN DEVICES (TABLETS) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
     body {
         font-size: 14px;
     }
@@ -284,5 +284,21 @@ img {
     }
     .hero-task-inputheading {
         padding: 15px 0;
+    }
+    .hero-task-inputtask {
+        margin-top: 1px;
+        padding: 8px 20px;
+    }
+    .hero-task-inputtask-input {
+        padding: 2px;
+        margin-bottom: 1px;
+    }
+
+    .hero-task-inputtask-error {
+        font-size: 11px;
+    }
+
+    .hero-task-inputtask-button {
+        padding: 1px;
     }
 }

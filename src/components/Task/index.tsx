@@ -103,6 +103,7 @@ const Task = () => {
                 {addTask && (
                     <div className="hero-task-inputtask">
                         <input
+                            className="hero-task-inputtask-input"
                             name="taskName"
                             type="text"
                             placeholder="Enter task"
@@ -111,12 +112,17 @@ const Task = () => {
                         />
                         {/* Input Error */}
                         {inputError && (
-                            <p style={{ color: 'red', fontSize: '10px' }}>
+                            <p className="hero-task-inputtask-error">
                                 {inputError}
                             </p>
                         )}
                         <div>
-                            <button onClick={handleSaveClick}>Save</button>
+                            <button
+                                className="hero-task-inputtask-button"
+                                onClick={handleSaveClick}
+                            >
+                                Save
+                            </button>
                         </div>
                     </div>
                 )}
