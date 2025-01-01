@@ -66,14 +66,12 @@ img {
 
 /* Hero */
 .hero {
-    /* border: 2px solid red; */
     width: 600px;
     margin: 0 auto;
     height: 700px;
 }
 
 .hero-timer {
-    /* border: 2px solid green; */
     background: rgba(255, 255, 255, 0.1);
     width: 100%;
     height: 60%;
@@ -128,7 +126,6 @@ img {
 }
 
 .hero-task {
-    /* border: 2px solid blue; */
     height: 38%;
     display: flex;
     flex-direction: column;
@@ -252,13 +249,40 @@ img {
     }
     .hero-timer-btn {
         padding: 10px 20px;
-        width: 47%;
-        border-radius: 5px;
         font-size: 15px;
-        font-weight: bold;
     }
 
     .hero-task-inputheading {
         padding: 10px 0;
+    }
+}
+
+/* TABLET VERSION */
+@media only screen and (min-width: 601px) {
+    body {
+        font-size: 14px;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .navbar .main-menu ul {
+        padding: 20px 2px 20px 10px;
+    }
+    .navbar ul li a {
+        margin: 0 10px;
+        padding: 12px 15px;
+    }
+    .hero {
+        height: 480px;
+    }
+    .hero-timer-countdown {
+        font-size: 100px;
+    }
+    .hero-timer-btn {
+        padding: 15px;
+        width: 42%;
+    }
+    .hero-task-inputheading {
+        padding: 15px 0;
     }
 }
