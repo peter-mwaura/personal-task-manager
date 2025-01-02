@@ -36,9 +36,9 @@ const Timer = () => {
 
         // Reassign color
         if (element) {
-            if (buttonToResetTimeLeft === 'POMODORO') color = 'purple';
-            if (buttonToResetTimeLeft === 'SHORT BREAK')
+            if (buttonToResetTimeLeft === 'POMODORO')
                 color = 'rgb(186, 73, 73)';
+            if (buttonToResetTimeLeft === 'SHORT BREAK') color = 'purple';
             if (buttonToResetTimeLeft === 'LONG BREAK') color = 'gray';
 
             element.style.background = color;
